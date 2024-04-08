@@ -1,3 +1,19 @@
+/* THEME COLORS */
+:root {
+  --main-bg-color: #080808;
+  --text-primary: rgb(233, 232, 232);
+
+  --color-eggplant: #5c3743;
+  --color-charcoal: #2f4f67;
+  --color-mag-haze: #98457c;
+  --color-raisin: #30262f;
+  --color-electric: #38e0f2;
+  --color-black: #15171b;
+  --color-lake: #6288ad;
+  --color-rose: #a95062;
+  --color-salmon: #db796a;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +21,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-bg-color);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  border: red dotted;
+  text-align: center;
+}
+
+h1 {
+  color: var(--text-primary);
 }
