@@ -4,9 +4,11 @@ function Hero() {
   return (
     <div className="hero">
       <div className="heroLeft">
-        <h1>Hello, I'm Greg!</h1>
-        <p>Stuff about doing good work, integrity, etc</p>
-        <p>Buttons for contact and hire</p>
+        <div className="hLtext">
+          <h1>Hello, I'm Greg!</h1>
+          <p>Stuff about doing good work, integrity, etc</p>
+          <p>Buttons for contact and hire</p>
+        </div>
       </div>
       <div className="heroRight">
         <h3>Projects</h3>

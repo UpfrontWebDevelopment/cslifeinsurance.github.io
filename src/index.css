@@ -1,6 +1,6 @@
 /* THEME COLORS */
 :root {
-  --main-bg-color: #080808;
+  --main-bg-color: rgb(8, 8, 8);
   --text-primary: rgb(233, 232, 232);
 
   --color-eggplant: #5c3743;
@@ -12,6 +12,8 @@
   --color-lake: #6288ad;
   --color-rose: #a95062;
   --color-salmon: #db796a;
+
+  --bg1-image: url('../src/images/vibeColors.jpg')
 }
 
 body {
@@ -68,16 +70,43 @@ h1 {
 .hero {
   border: green dotted;
   display: flex;
-  justify-content: space-around;
-  padding: 0 2rem;
+  justify-content: space-between;
+  max-width: 75%;
+  height: 50vh;
+  margin: auto;
 }
 
 .heroLeft {
-  /* border: greenyellow dotted; */
+  border: greenyellow dotted;
+  position: relative;
+  width: 80%;
+}
+
+.heroLeft::after {
+  content: '';
+  background-image: url('../src/images/vibeColors.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  opacity: .5;
+}
+
+.hLtext {
+  margin: 5rem auto 0;
+  border: white dotted;
+  padding-left: 3rem;
 }
 
 .heroRight {
-  
+  border: red dotted;
+  width: 20%;
+  margin: auto;
+  padding: 0 2rem;
 }
 
 .footer {
