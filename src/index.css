@@ -29,11 +29,57 @@ code {
     monospace;
 }
 
-.App {
+.main {
   border: red dotted;
-  text-align: center;
+  color: var(--text-primary);
 }
 
 h1 {
-  color: var(--text-primary);
+  margin: auto;
+}
+
+.header {
+  border: blue dotted;
+  display: flex;
+  justify-content: space-between;
+  max-width: 75%;
+  margin: auto;
+}
+
+.headerLeft > img {
+  display: flex;
+  width: 20%;
+  background-size: 10%;
+}
+
+.headerLeft {
+  width: 50%;
+  border: yellow dotted;
+  background-repeat: no-repeat;
+}
+
+.headerRight {
+  width: 50%;
+  border: goldenrod dotted;
+  text-align: right;
+  margin: auto;
+}
+
+.hero {
+  border: green dotted;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.heroLeft {
+  /* border: greenyellow dotted; */
+}
+
+.heroRight {
+  
+}
+
+.footer {
+  text-align: center;
 }

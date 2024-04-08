@@ -1,9 +1,14 @@
 import './index.css';
+import Header from './components/header';
+import Hero from './components/hero';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test</h1>
+    <div className="main">
+      <Header />
+      <Hero />
+      <Footer />
     </div>
   );
 }
